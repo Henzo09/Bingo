@@ -1037,6 +1037,21 @@
     <!-- Language Selector - Bottom left -->
     <div class="language-selector">
         <button class="language-toggle" onclick="toggleLanguageMenu()" id="languageToggle">
+             <!-- Theme Selector - Top right -->
+    <div class="theme-selector">
+        <button class="theme-btn" onclick="toggleThemeMenu()" id="themeToggle">
+            🎨 <span data-i18n="themes">Temas</span>
+        </button>
+        <div class="theme-menu" id="themeMenu">
+            <button class="theme-option" onclick="setTheme('default')" data-i18n="theme_default">🏠 Padrão</button>
+            <button class="theme-option" onclick="setTheme('dark')" data-i18n="theme_dark">🌙 Escuro</button>
+            <button class="theme-option" onclick="setTheme('halloween')" data-i18n="theme_halloween">🎃 Halloween</button>
+            <button class="theme-option" onclick="setTheme('christmas')" data-i18n="theme_christmas">🎄 Natal</button>
+            <button class="theme-option" onclick="setTheme('newyear')" data-i18n="theme_newyear">🎉 Ano Novo</button>
+            <button class="theme-option" onclick="setTheme('casino')" data-i18n="theme_casino">🎰 Cassino</button>
+            <button class="theme-option" onclick="setTheme('auto')" data-i18n="theme_auto">⚡ Auto</button>
+        </div>
+    </div>
             🌐 <span id="currentLangText">Português</span>
         </button>
         <div class="language-menu" id="languageMenu">
@@ -1080,22 +1095,6 @@
         🇰🇷 한국어
     </button>
 </div>
-    </div>
-
-    <!-- Theme Selector - Top right -->
-    <div class="theme-selector">
-        <button class="theme-btn" onclick="toggleThemeMenu()" id="themeToggle">
-            🎨 <span data-i18n="themes">Temas</span>
-        </button>
-        <div class="theme-menu" id="themeMenu">
-            <button class="theme-option" onclick="setTheme('default')" data-i18n="theme_default">🏠 Padrão</button>
-            <button class="theme-option" onclick="setTheme('dark')" data-i18n="theme_dark">🌙 Escuro</button>
-            <button class="theme-option" onclick="setTheme('halloween')" data-i18n="theme_halloween">🎃 Halloween</button>
-            <button class="theme-option" onclick="setTheme('christmas')" data-i18n="theme_christmas">🎄 Natal</button>
-            <button class="theme-option" onclick="setTheme('newyear')" data-i18n="theme_newyear">🎉 Ano Novo</button>
-            <button class="theme-option" onclick="setTheme('casino')" data-i18n="theme_casino">🎰 Cassino</button>
-            <button class="theme-option" onclick="setTheme('auto')" data-i18n="theme_auto">⚡ Auto</button>
-        </div>
     </div>
     
     <!-- Action Panel -->
