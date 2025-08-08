@@ -1036,10 +1036,18 @@
 
     <!-- Language Selector - Bottom left -->
     <div class="language-selector">
-        <button class="language-toggle" onclick="toggleLanguageMenu()" id="languageToggle">
-            🌐 <span id="currentLangText">Português</span>
+    <!-- BOTÃO DE IDIOMA -->
+    <button class="language-toggle" onclick="toggleLanguageMenu()" id="languageToggle">
+        🌐 <span id="currentLangText">Português</span>
+    </button>
+    
+    <!-- BOTÃO DE TEMA (ao lado do idioma) -->
+    <div class="theme-selector">
+        <button class="theme-btn" onclick="toggleThemeMenu()" id="themeToggle">
+            🎨 <span data-i18n="themes">Temas</span>
         </button>
-        <div class="theme-selector">
+        
+        <!-- MENU DE TEMAS (dentro do theme-selector) -->
         <div class="theme-menu" id="themeMenu">
             <button class="theme-option" onclick="setTheme('default')" data-i18n="theme_default">🏠 Padrão</button>
             <button class="theme-option" onclick="setTheme('dark')" data-i18n="theme_dark">🌙 Escuro</button>
