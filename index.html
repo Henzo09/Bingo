@@ -111,6 +111,9 @@
             bottom: 20px;
             left: 20px;
             z-index: 1000;
+            display: flex;        
+            gap: 10px;           
+            align-items: center; 
         }
 
         .language-toggle {
@@ -199,10 +202,8 @@
 
         /* Theme Selector */
         .theme-selector {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
+            position: relative;  /* ← MUDOU: era "fixed" */
+            z-index: 1001;      /* ← MUDOU: era 1000 */
         }
 
         .theme-btn {
@@ -228,8 +229,8 @@
 
         .theme-menu {
             position: absolute;
-            top: 55px;
-            right: 0;
+            bottom: 55px;
+            left: 0;
             background: var(--card-bg);
             border-radius: 15px;
             padding: 15px;
@@ -969,8 +970,8 @@
             }
 
             .language-selector {
-                bottom: 100px;
-                left: 10px;
+                flex-direction: column;
+                align-items: flex-start;
             }
 
             .credits {
