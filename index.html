@@ -3,31 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Meu App React (dev) — mesmo diretório</title>
+  <title>Bingo - Henzo</title>
   <style>
-    body {
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-      background:#071026;
-      color:#e6eef8;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      min-height:100vh;
-      padding:20px;
-    }
-    #root { width:100%; max-width:900px; }
-    .card {
-      background: linear-gradient(180deg,#0b1220 0%, #0e1a2b 100%);
-      border-radius:12px;
-      padding:20px;
-      box-shadow:0 8px 30px rgba(2,6,23,.6);
-    }
-    button { padding:8px 12px; border-radius:8px; border:none; cursor:pointer; }
+    html,body,#root { height:100%; margin:0; }
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; background:#071026; color:#e6eef8; }
+    #root { min-height:100vh; display:flex; flex-direction:column; }
   </style>
 </head>
 <body>
   <div id="root"></div>
+
+  <!-- React 18 UMD -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Babel (transpila JSX no browser) - APENAS PARA DESENVOLVIMENTO -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
   <script type="text/babel" data-presets="react" src="./app.js"></script>
 </body>
 </html>
